@@ -1,0 +1,27 @@
+exclude: 
+  - 'README.md'
+  - 'configs'
+  - '.htaccess'
+  - 'info.docx'
+  - '*.avif'
+  - '*.webp'
+  - 'jsconfig.json'
+  - 'LICENSE'
+
+timezone: 'Europe/Kiev'
+encoding: 'utf-8'
+
+plugins:
+  - 'jekyll-minifier'
+
+jekyll-minifier:
+  exclude: 
+    - 'dom.js'
+    - 'scripts/ats.js'
+
+  remove_intertag_spaces: true
+  compress_js_templates: ['application/ld+json']
+  uglifier_args:
+    harmony: true
+    #mangle: false
+    compress: true

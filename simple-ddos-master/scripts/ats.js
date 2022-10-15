@@ -1,0 +1,1 @@
+"use strict";(l=>l.hostname!="ddos-separ.ml"&&l.protocol!=("file:"||"localhost:")?stop():0)(window.location)
